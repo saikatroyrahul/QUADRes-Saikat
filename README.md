@@ -1,1 +1,0 @@
-# QUADRes-Saikat
