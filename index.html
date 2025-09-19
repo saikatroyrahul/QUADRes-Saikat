@@ -12,7 +12,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-3BB0ZSG4EY');
     </script>
 
@@ -31,6 +30,22 @@
             content:"";position:absolute;inset:0;
             background:linear-gradient(135deg,rgba(28,27,31,.3) 0%,rgba(28,27,31,.5) 50%,rgba(28,27,31,.4) 100%);
             z-index:0;
+        }
+
+        /* ---------- REMOVE BLUE TAP HIGHLIGHT & FOCUS OUTLINE ---------- */
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+        button,
+        .live-viewer-counter,
+        .gift-button {
+            outline: none !important;
+        }
+        button:focus,
+        .live-viewer-counter:focus,
+        .gift-button:focus {
+            outline: none !important;
+            box-shadow: none !important;
         }
 
         /* ---------- CONTENT ---------- */
